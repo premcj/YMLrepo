@@ -1,0 +1,7 @@
+
+- hosts: cli
+  become: true
+  tasks:
+    - name: Create a file
+      file: path=/home/nec.txt state=touch
+...
